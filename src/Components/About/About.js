@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../../images/demo1.jpg'
+import image from '../../images/demo3.jpg'
 const About = () => {
     return (
         <div className="bg-dark text-white py-5">

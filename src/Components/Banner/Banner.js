@@ -2,6 +2,7 @@ import ParticlesBg from "particles-bg";
 import React from "react";
 import "./banner.css";
 import Typewriter from "typewriter-effect";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -20,7 +21,9 @@ const Banner = () => {
               />{" "}
             </span>
           </h2>
-          <button className="btn btn-primary mt-3 rounded-pill">Contact Now</button>
+          <Link to="/contact">
+          <button className="btn btn-primary mt-3 rounded-pill">Read more</button>
+          </Link>
         </div>
         <div className="overlay">
           <ParticlesBg num={60} color="#f1f1f1" type="cobweb" bg={true} />
