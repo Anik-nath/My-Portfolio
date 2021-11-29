@@ -1,0 +1,26 @@
+.coverContainer{
+position: relative;
+background: url('../../images/demo2.jpg');
+height: 100vh;
+width: 100%;
+background-size: cover;
+background-position: center;
+z-index: -1;
+}
+.coverTitle{
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%,30%);
+}
+.active{
+    background-color: rgba(10, 12, 24, 0.9);
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.hoverMe:hover{
+    color: #ccc !important;
+}
