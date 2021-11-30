@@ -37,6 +37,7 @@ const Navigation = () => {
               <Nav.Link className="text-white hoverMe" as={HashLink} to="/about">About</Nav.Link>
               <Nav.Link className="text-white hoverMe" as={HashLink} to="/projects">Projects</Nav.Link>
               <Nav.Link className="text-white hoverMe" as={HashLink} to="/contact">Contact</Nav.Link>
+              <Nav.Link className="text-white hoverMe" as={HashLink} to="/blogs">Blogs</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

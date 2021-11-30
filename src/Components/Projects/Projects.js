@@ -15,7 +15,7 @@ const Projects = () => {
               <span
                 style={{
                   color: "transparent",
-                  webkitTextStroke: "1px #ffffff20",
+                  WebkitTextStroke: "1px #ffffff20",
                   fontSize: "56px",
                 }}
                 className="position-absolute start-0 bottom-50 mb-2 text-uppercase"

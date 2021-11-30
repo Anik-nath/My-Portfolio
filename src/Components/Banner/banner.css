@@ -24,3 +24,14 @@ z-index: -1;
 .hoverMe:hover{
     color: #ccc !important;
 }
+.skillimage{
+    width: 100%;
+}
+#skill .card{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.projectShadow{
+    box-shadow: 0px 2px 4px 0px #000;
+}
