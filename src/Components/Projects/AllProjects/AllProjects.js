@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Spinner } from 'react-bootstrap';
 import Showcase from './Showcase';
+import Aos from 'aos';
 
 const AllProjects = () => {
     const [project,setProject] = useState([]);
@@ -8,13 +9,18 @@ const AllProjects = () => {
         fetch('./projects.json')
         .then(res=> res.json())
         .then(data => setProject(data))
-    },[])
+    },[]);
+
+    useEffect(()=>{
+        Aos.init({duration:1000})
+    },[]);
+
     return (
         <div className="bg-dark text-white py-5">
         <div className="container pt-5">
             <div className="row">
                 <div className="col-12 text-center">
-                    <h3>ALL Projects</h3>
+                    <h3>ALL <span className="text-warning">Projects</span></h3>
                 </div>
                 {
                     project.length === 0 && 

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Card } from "react-bootstrap";
 import project1 from "../../images/p1.png";
 import project2 from "../../images/p2.png";
 import project3 from "../../images/p3.png";
+import Aos from 'aos';
 
 const Projects = () => {
+  useEffect(()=>{
+    Aos.init({duration:1000})
+},[])
   return (
     <div className="bg-dark text-white py-5">
       <div className="container pt-5">
@@ -26,7 +30,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-4 col-md-4 col-12">
+          <div data-aos="fade-right" className="col-lg-4 col-md-4 col-12">
             <Card className="bg-dark border text-center">
               <Card.Img variant="top" src={project2} />
               <Card.Body>
@@ -65,7 +69,7 @@ const Projects = () => {
               </Card.Body>
             </Card>
           </div>
-          <div className="col-lg-4 col-md-4 col-12 my-5 my-lg-0 my-md-0">
+          <div data-aos="fade-up" className="col-lg-4 col-md-4 col-12 my-5 my-lg-0 my-md-0">
           <Card className="bg-dark border text-center">
               <Card.Img variant="top" src={project1} />
               <Card.Body>
@@ -104,7 +108,7 @@ const Projects = () => {
               </Card.Body>
             </Card>
           </div>
-          <div className="col-lg-4 col-md-4 col-12">
+          <div data-aos="fade-left" className="col-lg-4 col-md-4 col-12">
           <Card className="bg-dark border text-center">
               <Card.Img variant="top" src={project3} />
               <Card.Body>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import image from "../../../images/myimage11.jpg";
 import skill1 from "../../../images/html.png";
 import skill2 from "../../../images/css.png";
@@ -8,22 +8,28 @@ import skill5 from "../../../images/js.png";
 import skill6 from "../../../images/mongo.png";
 import certificate from "../../../images/certificate.PNG";
 import { ProgressBar } from "react-bootstrap";
+import Aos from 'aos';
+
 
 const AboutMore = () => {
+  useEffect(()=>{
+    Aos.init({duration:1000})
+},[]);
+
   return (
     <div className="bg-dark text-white py-5">
       <div className="container mt-5">
         {/* about me */}
         <div className="row">
           <div className="col-lg-4 col-md-6 col-12 text-left">
-            <img className="w-100" src={image} alt="" />
+            <img data-aos="fade-left" className="w-100" src={image} alt="" />
           </div>
           <div className="col-lg-8 col-md-6 col-12  mt-5 mt-md-0 mt-lg-0">
-            <div className="mb-5">
+            <div data-aos="fade-right" className="mb-5">
               <h3 className="mb-0 text-uppercase">Who am i?</h3>
               <h6 className="text-white-50">What my skills?</h6>
             </div>
-            <div
+            <div data-aos="fade-in"
               style={{ textAlign: "justify" }}
               className="text-white-50 lead"
             >
@@ -37,12 +43,12 @@ const AboutMore = () => {
                 on. The work I provide is of highest quality, fully responsive,
                 and tested in a wide range of devices.
               </p>
-              <div className="row g-3">
-                <div className="col-12">
+              <div  className="row g-3">
+                <div data-aos="fade-right" className="col-12">
                   <small>Good Personality</small>
                 <ProgressBar style={{height:"5px"}} now={95} />
                 </div>
-                <div className="col-12 mb-2">
+                <div data-aos="fade-left" className="col-12 mb-2">
                    <small>Focusd on Work</small>
                 <ProgressBar style={{height:"5px"}} now={90} />
                 </div>

@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="bg-black py-3 text-center text-muted"> 
-                <small>&copy; 2021 All rights reserved - Anik Nath.</small>
+                <small>&copy; 2021 All rights reserved - <span className="text-warning">Anik Nath</span>.</small>
             </div>
         </div>
     );

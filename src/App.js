@@ -9,9 +9,27 @@ import Contact from './Components/Contact/Contact';
 import AboutMore from './Components/About/AboutMore/AboutMore';
 import AllProjects from './Components/Projects/AllProjects/AllProjects';
 import Blogs from './Components/Blogs/Blogs';
+import HashLoader from "react-spinners/HashLoader";
+import { useEffect, useState } from 'react';
+import 'aos/dist/aos.css';
+
 function App() {
+  const[loading,setLoading] =  useState(false);
+  useEffect(()=>{
+    setLoading(true);
+    setTimeout(()=>{
+      setLoading(false);
+    },5000)
+  },[])
+
   return (
     <div className="App">
+      {loading ?
+      <div style={{height:"100vh"}} className="d-flex flex-column justify-content-center align-items-center bg-dark text-white">
+        <HashLoader color={"#9B9B9B"} loading={loading} size={100} />
+        <p className="mt-3 text-white-50 bold">Relax and Take Deep Breaths.</p>
+      </div>
+     :
       <BrowserRouter>
       <Navigation></Navigation>
         <Routes>
@@ -24,6 +42,7 @@ function App() {
         </Routes>
         <Footer></Footer>
       </BrowserRouter>
+ }
     </div>
   );
 }

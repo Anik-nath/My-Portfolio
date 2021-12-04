@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import image from '../../images/demo3.jpg'
+import image from '../../images/demo3.jpg';
+import Aos from 'aos';
+
+
 const About = () => {
+    useEffect(()=>{
+        Aos.init({duration:1000})
+    },[])
     return (
         <div className="bg-dark text-white py-5">
             <div className="container mt-5">
@@ -16,14 +22,14 @@ const About = () => {
                </div>
                 <div className="row">
                     <div className="col-lg-6 col-md-6 col-12">
-                        <img className="w-100" src={image} alt="" />
+                        <img data-aos="zoom-in" className="w-100" src={image} alt="" />
                     </div>
                     <div className="col-lg-6 col-md-6 col-12  mt-5 mt-md-0 mt-lg-0">
-                        <div className="mb-5">
+                        <div data-aos="fade-left" className="mb-5">
                         <h2 className="mb-0 text-uppercase">Anik Deb nath</h2>
                         <h6 className="text-white-50">Creative React Developer</h6>
                         </div>
-                        <div style={{textAlign:'justify'}} className="text-white-50 lead">
+                        <div data-aos="zoom-in" style={{textAlign:'justify'}} className="text-white-50 lead">
                         <p>My name is Anik Deb nath. I am a Web Developer, and I'm very passionate and dedicated to my work.</p>
                         <p>I have vast knowledge in html, css, Javascript , React (javascript framewok), Tailwind , Material Ui, Firebase and so on. The work I provide is of highest quality, fully responsive, and tested in a wide range of devices.</p>
                         </div>

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
 import brand from '../../images/brand.png';
-
+import Aos from 'aos';
 
 const Navigation = () => {
     const [shownavbar,setNavbar] = useState(false);
@@ -16,11 +16,16 @@ const Navigation = () => {
         }
     }
     window.addEventListener('scroll',changeBackground);
+
+    useEffect(()=>{
+      Aos.init({duration:1000})
+  },[]);
+
   return (
     <div>
-      <Navbar className={shownavbar ? 'active py-3' : 'py-3'} fixed="top" collapseOnSelect expand="lg" bg="" variant="dark">
+      <Navbar className={shownavbar ? 'active py-3' : 'py-3'} fixed="top" collapseOnSelect expand="lg"  variant="dark">
         <Container>
-          <Navbar.Brand as={HashLink} to="/home">
+          <Navbar.Brand data-aos="fade-right" as={HashLink} to="/home">
             <img
               alt=""
               src={brand}
@@ -32,13 +37,14 @@ const Navigation = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ms-auto text-center">
+            <Nav data-aos="fade-in" className="ms-auto text-center">
               <Nav.Link className="text-white hoverMe" as={HashLink} to="/home">Home</Nav.Link>
               <Nav.Link className="text-white hoverMe" as={HashLink} to="/about">About</Nav.Link>
               <Nav.Link className="text-white hoverMe" as={HashLink} to="/projects">Projects</Nav.Link>
               <Nav.Link className="text-white hoverMe" as={HashLink} to="/contact">Contact</Nav.Link>
               <Nav.Link className="text-white hoverMe" as={HashLink} to="/blogs">Blogs</Nav.Link>
             </Nav>
+
           </Navbar.Collapse>
         </Container>
       </Navbar>
