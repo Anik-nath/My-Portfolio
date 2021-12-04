@@ -11,7 +11,7 @@ const Showcase = (props) => {
 
     return (
        <div className="col-lg-4 g-5 col-md-6 col-12">
-            <Card data-aos="flip-left" className="bg-dark projectShadow">
+            <Card className="bg-dark projectShadow">
               <Card.Img variant="top" src={img1} />
               <Card.Body>
                 <Card.Title className="text-white-50">{name}</Card.Title>

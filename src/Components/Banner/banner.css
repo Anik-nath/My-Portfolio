@@ -37,7 +37,6 @@ z-index: -1;
 }
 @media screen and (max-width:991px) {
     #responsive-navbar-nav{
-        /* background-color: rgba(10, 12, 24, 0.9); */
        padding: 15px;
        margin-top: 5px;
        backdrop-filter: blur(6px);

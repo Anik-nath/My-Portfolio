@@ -30,7 +30,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="row">
-          <div data-aos="fade-right" className="col-lg-4 col-md-4 col-12">
+          <div  className="col-lg-4 col-md-4 col-12">
             <Card className="bg-dark border text-center">
               <Card.Img variant="top" src={project2} />
               <Card.Body>
@@ -69,7 +69,7 @@ const Projects = () => {
               </Card.Body>
             </Card>
           </div>
-          <div data-aos="fade-up" className="col-lg-4 col-md-4 col-12 my-5 my-lg-0 my-md-0">
+          <div  className="col-lg-4 col-md-4 col-12 my-5 my-lg-0 my-md-0">
           <Card className="bg-dark border text-center">
               <Card.Img variant="top" src={project1} />
               <Card.Body>
@@ -108,7 +108,7 @@ const Projects = () => {
               </Card.Body>
             </Card>
           </div>
-          <div data-aos="fade-left" className="col-lg-4 col-md-4 col-12">
+          <div  className="col-lg-4 col-md-4 col-12">
           <Card className="bg-dark border text-center">
               <Card.Img variant="top" src={project3} />
               <Card.Body>

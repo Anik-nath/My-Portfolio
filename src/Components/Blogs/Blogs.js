@@ -13,7 +13,7 @@ const Blogs = () => {
         <div className="row">
           <div className="col-12 text-center">
             <h3>ALL <span className="text-warning">Blogs</span></h3>
-            <img data-aos="zoom-in" className="w-100" src="https://i.ibb.co/jrsD62T/istockphoto-1081589832-170667a-removebg-preview.png" alt="" />
+            <img  className="w-100" src="https://i.ibb.co/jrsD62T/istockphoto-1081589832-170667a-removebg-preview.png" alt="" />
           </div>
         </div>
       </div>

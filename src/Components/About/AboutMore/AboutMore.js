@@ -22,14 +22,14 @@ const AboutMore = () => {
         {/* about me */}
         <div className="row">
           <div className="col-lg-4 col-md-6 col-12 text-left">
-            <img data-aos="fade-left" className="w-100" src={image} alt="" />
+            <img  className="w-100" src={image} alt="" />
           </div>
           <div className="col-lg-8 col-md-6 col-12  mt-5 mt-md-0 mt-lg-0">
-            <div data-aos="fade-right" className="mb-5">
+            <div  className="mb-5">
               <h3 className="mb-0 text-uppercase">Who am i?</h3>
               <h6 className="text-white-50">What my skills?</h6>
             </div>
-            <div data-aos="fade-in"
+            <div 
               style={{ textAlign: "justify" }}
               className="text-white-50 lead"
             >
@@ -44,11 +44,11 @@ const AboutMore = () => {
                 and tested in a wide range of devices.
               </p>
               <div  className="row g-3">
-                <div data-aos="fade-right" className="col-12">
+                <div  className="col-12">
                   <small>Good Personality</small>
                 <ProgressBar style={{height:"5px"}} now={95} />
                 </div>
-                <div data-aos="fade-left" className="col-12 mb-2">
+                <div  className="col-12 mb-2">
                    <small>Focusd on Work</small>
                 <ProgressBar style={{height:"5px"}} now={90} />
                 </div>
