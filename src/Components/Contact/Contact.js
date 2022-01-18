@@ -1,6 +1,6 @@
 import  emailjs  from "emailjs-com";
 import React from "react";
-import { Form ,Button} from "react-bootstrap";
+import { Form } from "react-bootstrap";
 
 const Contact = () => {
     const send =(e)=>{
@@ -13,11 +13,11 @@ const Contact = () => {
         })
     }
   return (
-    <div className="bg-dark text-white py-5">
-      <div className="container my-5">
+    <div className="myBgColor text-white py-5">
+      <div className="container my-5 py-5">
         <div className="row">
           <div className="col-12">
-            <h2 className="position-relative pb-5 text-uppercase">
+            <h2 className="position-relative pb-5 my-title">
               Get in Touch
               <span
                 style={{
@@ -35,23 +35,35 @@ const Contact = () => {
         <div className="row">
           <div className="col-lg-6 col-md-6 col-12">
             <Form onSubmit={send}>
+            <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlInput1"
+              >
+                
+                <Form.Control className="cardbgColor border-0 rounded-pill text-white" type="fullname" name="fullname" placeholder="Your fullname" />
+              </Form.Group>
               <Form.Group
                 className="mb-3"
                 controlId="exampleForm.ControlInput1"
               >
-                <Form.Label>Email address</Form.Label>
-                <Form.Control className="bg-dark text-white" type="email" name="email" placeholder="name@example.com" />
+              
+                <Form.Control className="cardbgColor border-0 rounded-pill text-white" type="email" name="email" placeholder="name@example.com" />
               </Form.Group>
               <Form.Group
                 className="mb-3"
-                controlId="exampleForm.ControlTextarea1"
+                controlId="exampleForm.ControlTextarea2"
               >
-                <Form.Label>Write your message</Form.Label>
-                <Form.Control className="bg-dark text-white" as="textarea" name="message" rows={3} />
+              <Form.Control className="cardbgColor border-0 rounded-pill text-white" type="subject" name="subject" placeholder="Subject" />
               </Form.Group>
-              <Button className="rounded-pill w-100 mt-3" variant="light" type="submit">
-                    Send Me
-                </Button>
+              <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlTextarea3"
+              >
+                <Form.Control className="cardbgColor border-0 rounded text-white" as="textarea" name="message" rows={4} placeholder="Your Message"  />
+              </Form.Group>
+              <button className="myButton rounded-pill w-100 mt-3" type="submit">
+                    Send Message
+                </button>
             </Form>
           </div>
           <div className="col-lg-6 col-md-6 col-12 my-5 my-lg-0 my-md-0">

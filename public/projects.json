@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "name": "Travellink",
+      "name": "Travelling",
       "img1": "https://i.ibb.co/CKq45XS/p222.png",
       "img2": "http//",
       "img3": "http//",
@@ -73,7 +73,53 @@
       "point5": "Vs code,git,github as tools",
       "live" : "https://anik-nath.github.io/Devfoli/",
       "codelink" : "https://github.com/Anik-nath/Devfoli"
+    },
+    {
+      "id": 6,
+      "name": "Fitness Cloud [Team works]",
+      "img1":"https://i.ibb.co/X4HP6zm/fitness-1365-x-771.png",
+      "img2": "http//",
+      "img3": "http//",
+      "details": "lorem",
+      "point1": "Use Html5,css3,Bootstrap5",
+      "point2": "Itis a Gym page",
+      "point3": "MongoDb as a database",
+      "point4": "fontawesome icon library",
+      "point5": "Vs code,git,github as tools",
+      "live" : "https://fitness-26c3f.web.app/",
+      "codelink" : "https://github.com/EmperiorTech/FitnessCloud"
+    },
+    {
+      "id": 7,
+      "name": "Top Stock",
+      "img1":"https://i.ibb.co/18rQgdY/top-Stock-1365-x-771.png",
+      "img2": "http//",
+      "img3": "http//",
+      "details": "lorem",
+      "point1": "Use Html5,css3,Bootstrap5",
+      "point2": "Itis a ecommerce page",
+      "point3": "MongoDb as a database",
+      "point4": "fontawesome icon library",
+      "point5": "Vs code,git,github as tools",
+      "live" : "https://top-stock-109d9.web.app/",
+      "codelink" : "https://github.com/Anik-nath/Topstock"
+    },
+    {
+      "id": 8,
+      "name": "Cleaning Services",
+      "img1":"https://i.ibb.co/nr45zqd/Cleaner-Services-1365-x-771.png",
+      "img2": "http//",
+      "img3": "http//",
+      "details": "lorem",
+      "point1": "Use Html5,css3,Bootstrap5",
+      "point2": "Itis a Services page",
+      "point3": "MongoDb as a database",
+      "point4": "fontawesome icon library",
+      "point5": "Vs code,git,github as tools",
+      "live" : "https://bd-cleener.web.app/",
+      "codelink" : "https://github.com/Anik-nath/Cleaning-sevices-client"
     }
+
   ]
 
 

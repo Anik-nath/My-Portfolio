@@ -16,11 +16,11 @@ const AllProjects = () => {
     },[]);
 
     return (
-        <div className="bg-dark text-white py-5">
-        <div className="container pt-5">
-            <div className="row">
+        <div id='allProjects' className="myBgColor text-white py-5">
+        <div className="container py-5">
+            <div className="row pt-5">
                 <div className="col-12 text-center">
-                    <h3>ALL <span className="text-warning">Projects</span></h3>
+                    <h3>My Projects</h3>
                 </div>
                 {
                     project.length === 0 && 

@@ -12,6 +12,8 @@ import Blogs from './Components/Blogs/Blogs';
 import HashLoader from "react-spinners/HashLoader";
 import { useEffect, useState } from 'react';
 import 'aos/dist/aos.css';
+import ScrollToTop from 'react-scroll-to-top';
+import Review from './Components/Review/Review';
 
 function App() {
   const[loading,setLoading] =  useState(false);
@@ -32,6 +34,7 @@ function App() {
      :
       <BrowserRouter>
       <Navigation></Navigation>
+      <ScrollToTop width='20' height='20' smooth color="gray"/>
         <Routes>
             <Route path="/" element={<Home></Home>}></Route>
             <Route path="/home" element={<Home></Home>}></Route>
@@ -39,6 +42,7 @@ function App() {
             <Route path="/contact" element={<Contact></Contact>}></Route>
             <Route path="/blogs" element={<Blogs></Blogs>}></Route>
             <Route path="/projects" element={<AllProjects></AllProjects>}></Route>
+            <Route path="/review" element={<Review></Review>}></Route>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

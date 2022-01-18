@@ -11,7 +11,7 @@ const Showcase = (props) => {
 
     return (
        <div className="col-lg-4 g-5 col-md-6 col-12">
-            <Card className="bg-dark projectShadow">
+            <div className="cardbgColor">
               <Card.Img variant="top" src={img1} />
               <Card.Body>
                 <Card.Title className="text-white-50">{name}</Card.Title>
@@ -31,7 +31,7 @@ const Showcase = (props) => {
                     target="_blank"
                     rel="noreferrer"
                     href={live}
-                    className="btn btn-outline-secondary rounded-pill"
+                    className="cardButton rounded-pill"
                   >
                     Live Link
                   </a>
@@ -39,16 +39,16 @@ const Showcase = (props) => {
                     target="_blank"
                     rel="noreferrer"
                     href={codelink}
-                    className="btn btn-outline-secondary rounded-pill"
+                    className="cardButton rounded-pill"
                   >
                     Code Link
                   </a>
-                  <a href="#!" className="btn btn-outline-secondary rounded-pill">
+                  <a href="#!" className="cardButton rounded-pill">
                     Details
                   </a>
                 </div>
               </Card.Body>
-            </Card>
+            </div>
        </div>
     );
 };

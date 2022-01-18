@@ -6,10 +6,13 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div>
+   
       <div className="coverContainer">
+         <div className="overlay">
+          <ParticlesBg num={60} color="#f1f1f1" type="cobweb" bg={true} />
+        </div>
         <div className="coverTitle text-white text-center">
-          <h2 className="display-4">
+          <h2 className="display-4 type">
             I'm a <br />
             <span className="h1">
               <Typewriter
@@ -21,15 +24,15 @@ const Banner = () => {
               />{" "}
             </span>
           </h2>
-          <Link to="/contact">
-          <button className="btn btn-primary mt-3 rounded-pill">Read more</button>
-          </Link>
+          <div className="">
+            <Link to="/contact">
+            <button className="myButton mt-3 ">Contact Now</button>
+            </Link>
+          </div>
         </div>
-        <div className="overlay">
-          <ParticlesBg num={60} color="#f1f1f1" type="cobweb" bg={true} />
-        </div>
+       
       </div>
-    </div>
+    
   );
 };
 
