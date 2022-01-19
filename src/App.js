@@ -14,6 +14,7 @@ import { useEffect, useState } from "react";
 import "aos/dist/aos.css";
 import ScrollToTop from "react-scroll-to-top";
 import Review from "./Components/Review/Review";
+import secretFunction from "./secret";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -23,7 +24,7 @@ function App() {
       setLoading(false);
     }, 5000);
   }, []);
-
+  secretFunction();
   return (
     <div className="App">
       {loading ? (
