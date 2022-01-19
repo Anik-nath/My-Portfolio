@@ -45,13 +45,14 @@
   border: none;
   text-decoration: none;
   font-family: "Quicksand", sans-serif;
-  border-radius:  25px 25px 0px 25px ;
+  border-radius: 25px 25px 0px 25px;
 }
 
 .type,
 #footer,
 #about-more,
-#allProjects {
+#allProjects,
+#modal {
   font-family: "Quicksand", sans-serif;
 }
 #aboutme,
@@ -77,21 +78,23 @@
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  outline: none;
+  border: none;
 }
 .myButton:hover,
 .cardButton:hover {
   color: #fff;
-  background-color:#218859 ;
+  background-color: #218859;
 }
-#social a i:hover{
+#social a i:hover {
   color: #2ca46d;
 }
-.styles_scroll-to-top__2A70v{
-background-color: transparent !important;
-box-shadow: none !important;
-border: 1px solid #2d343e !important;
-border-radius: 50% !important;
+.styles_scroll-to-top__2A70v {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: 1px solid #2d343e !important;
+  border-radius: 50% !important;
 }
-.styles_scroll-to-top__2A70v:hover{
+.styles_scroll-to-top__2A70v:hover {
   background-color: #2d343e !important ;
 }

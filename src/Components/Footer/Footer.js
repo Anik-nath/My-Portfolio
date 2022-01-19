@@ -26,7 +26,7 @@ const Footer = () => {
                         <a className='text-white-50' href="https://www.facebook.com/aaroon.fince/"><i className="fab fa-facebook h4"></i></a>
                        <a className='text-white-50' href="https://github.com/Anik-nath"><i className="fab fa-github h4"></i></a>
                         <a className='text-white-50' href="https://www.linkedin.com/in/anik-deb-nath-26aa22190/"><i className="fab fa-linkedin h4"></i></a>
-                       <a className='text-white-50' href="https://stackoverflow.com/users/16790104/anik-deb-nath"><i class="fab fa-stack-overflow h4"></i></a>
+                       <a className='text-white-50' href="https://stackoverflow.com/users/16790104/anik-deb-nath"><i className="fab fa-stack-overflow h4"></i></a>
                     </div>
                     </div>
                 </div>

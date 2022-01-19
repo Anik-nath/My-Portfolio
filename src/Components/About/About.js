@@ -23,7 +23,7 @@ const About = () => {
                 }}
                 className="position-absolute start-0 bottom-50 mb-2 text-uppercase"
               >
-                Introduction
+                Intro
               </span>
             </h1>
           </div>
