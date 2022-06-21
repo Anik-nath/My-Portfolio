@@ -9,12 +9,13 @@ import Contact from "./Components/Contact/Contact";
 import AboutMore from "./Components/About/AboutMore/AboutMore";
 import AllProjects from "./Components/Projects/AllProjects/AllProjects";
 import Blogs from "./Components/Blogs/Blogs";
-import HashLoader from "react-spinners/HashLoader";
+// import HashLoader from "react-spinners/HashLoader";
 import { useEffect, useState } from "react";
 import "aos/dist/aos.css";
 import ScrollToTop from "react-scroll-to-top";
 import Review from "./Components/Review/Review";
 import secretFunction from "./secret";
+import Loading from "./Components/Loading/Loading";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -22,21 +23,13 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 3000);
   }, []);
   secretFunction();
   return (
     <div className="App">
       {loading ? (
-        <div
-          style={{ height: "100vh" }}
-          className="d-flex flex-column justify-content-center align-items-center bg-dark text-white"
-        >
-          <HashLoader color={"#9B9B9B"} loading={loading} size={100} />
-          <p className="mt-3 text-white-50 bold">
-            Relax and Take Deep Breaths.
-          </p>
-        </div>
+        <Loading loading={loading}></Loading>
       ) : (
         <BrowserRouter>
           <Navigation></Navigation>
@@ -47,10 +40,7 @@ function App() {
             <Route path="/about" element={<AboutMore></AboutMore>}></Route>
             <Route path="/contact" element={<Contact></Contact>}></Route>
             <Route path="/blogs" element={<Blogs></Blogs>}></Route>
-            <Route
-              path="/projects"
-              element={<AllProjects></AllProjects>}
-            ></Route>
+            <Route path="/projects" element={<AllProjects></AllProjects>}></Route>
             <Route path="/review" element={<Review></Review>}></Route>
           </Routes>
           <Footer></Footer>

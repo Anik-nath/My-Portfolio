@@ -34,9 +34,9 @@ const Navigation = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto text-center">
               <Nav.Link className="text-white hoverMe fw-bold ms-lg-3" as={HashLink} to="/home">Home</Nav.Link>
-              <Nav.Link className="text-white hoverMe fw-bold ms-lg-3" as={HashLink} to="/about">About</Nav.Link>
+              {/* <Nav.Link className="text-white hoverMe fw-bold ms-lg-3" as={HashLink} to="/about">About</Nav.Link> */}
               <Nav.Link className="text-white hoverMe fw-bold ms-lg-3" as={HashLink} to="/projects">Projects</Nav.Link>
-              <Nav.Link className="text-white hoverMe fw-bold ms-lg-3" as={HashLink} to="/review">Testimonials</Nav.Link>
+              {/* <Nav.Link className="text-white hoverMe fw-bold ms-lg-3" as={HashLink} to="/review">Testimonials</Nav.Link> */}
               <Nav.Link className="text-white hoverMe fw-bold ms-lg-3" as={HashLink} to="/blogs">Blogs</Nav.Link>
               <Nav.Link className="text-white hoverMe fw-bold ms-lg-3" as={HashLink} to="/contact">Contact</Nav.Link>
             </Nav>

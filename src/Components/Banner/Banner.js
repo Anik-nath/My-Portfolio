@@ -6,8 +6,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-   
-      <div className="coverContainer">
+      <div className="coverContainer" >
          <div className="overlay">
           <ParticlesBg num={60} color="#f1f1f1" type="cobweb" bg={true} />
         </div>

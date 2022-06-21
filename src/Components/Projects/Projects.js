@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Card } from "react-bootstrap";
 import project1 from "../../images/p1.png";
 import project2 from "../../images/p2.png";
-import project3 from "../../images/p3.png";
+import project3 from "../../images/p4.png";
 import Aos from "aos";
 import { Link } from "react-router-dom";
 
@@ -31,9 +31,9 @@ const Projects = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-4 col-md-4 col-12">
+          <div id="travel" className="col-lg-4 col-md-4 col-12">
             <Card className="cardbgColor text-center">
-              <Card.Img variant="top" src={project2} />
+              <Card.Img loading="lazy" variant="top" src={project2} />
               <Card.Body>
                 <Card.Title>Travel Booking</Card.Title>
                 <Card.Text className="d-flex flex-wrap gap-2 py-2">
@@ -81,7 +81,60 @@ const Projects = () => {
               </Card.Body>
             </Card>
           </div>
-          <div className="col-lg-4 col-md-4 col-12 my-5 my-lg-0 my-md-0">
+          <div id="foodmart" className="col-lg-4 col-md-4 col-12">
+            <Card className="cardbgColor text-center">
+              <Card.Img variant="top" src={project3} />
+              <Card.Body>
+                <Card.Title>FoodMart</Card.Title>
+                <Card.Text className="d-flex flex-wrap gap-2 py-2">
+                  <span className="border border-secondary px-2 rounded-pill">
+                    NextJs
+                  </span>
+                  <span className="border border-secondary px-2 rounded-pill">
+                    Tailwind
+                  </span>
+                  <span className="border border-secondary px-2 rounded-pill">
+                    Firebase
+                  </span>
+                  <span className="border border-secondary px-2 rounded-pill">
+                    Redux
+                  </span>
+                  <span className="border border-secondary px-2 rounded-pill">
+                    Jira
+                  </span>
+                  <span className="border border-secondary px-2 rounded-pill">
+                    Mongo DB
+                  </span>
+                  <span className="border border-secondary px-2 rounded-pill">
+                    NODE JS
+                  </span>
+                  <span className="border border-secondary px-2 rounded-pill">
+                    Stripe
+                  </span>
+                </Card.Text>
+
+                <div className="d-flex justify-content-center gap-2">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://food-mart-web.vercel.app/"
+                    className="cardButton rounded-pill"
+                  >
+                    <i className="fas fa-eye"></i> Live Link
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://github.com/Rx-devs/FoodMart-client-side/tree/development"
+                    className="cardButton rounded-pill"
+                  >
+                    Code Link
+                  </a>
+                </div>
+              </Card.Body>
+            </Card>
+          </div>
+          <div id="cycleshop" className="col-lg-4 col-md-4 col-12 my-5 my-lg-0 my-md-0">
             <Card className="cardbgColor text-center">
               <Card.Img variant="top" src={project1} />
               <Card.Body>
@@ -131,53 +184,7 @@ const Projects = () => {
               </Card.Body>
             </Card>
           </div>
-          <div className="col-lg-4 col-md-4 col-12">
-            <Card className="cardbgColor text-center">
-              <Card.Img variant="top" src={project3} />
-              <Card.Body>
-                <Card.Title>Medi Care</Card.Title>
-                <Card.Text className="d-flex flex-wrap gap-2 py-2">
-                  <span className="border border-secondary px-2 rounded-pill">
-                    HTML5
-                  </span>
-                  <span className="border border-secondary px-2 rounded-pill">
-                    CSS3
-                  </span>
-                  <span className="border border-secondary px-2 rounded-pill">
-                    Bootstrap
-                  </span>
-                  <span className="border border-secondary px-2 rounded-pill">
-                    REACT
-                  </span>
-                  <span className="border border-secondary px-2 rounded-pill">
-                    FIREBASE
-                  </span>
-                  <span className="border border-secondary px-2 rounded-pill">
-                    NODE JS
-                  </span>
-                </Card.Text>
-
-                <div className="d-flex justify-content-center gap-2">
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://health-care-73f51.web.app/"
-                    className="cardButton rounded-pill"
-                  >
-                    <i className="fas fa-eye"></i> Live Link
-                  </a>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://github.com/Anik-nath/HEALTH-CARE"
-                    className="cardButton rounded-pill"
-                  >
-                    Code Link
-                  </a>
-                </div>
-              </Card.Body>
-            </Card>
-          </div>
+          
         </div>
         <div className="text-center mt-5">
           <Link to="/projects">
