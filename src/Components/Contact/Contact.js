@@ -61,8 +61,8 @@ const Contact = () => {
               >
                 <Form.Control className="cardbgColor border-0 rounded text-white" as="textarea" name="message" rows={4} placeholder="Your Message"  />
               </Form.Group>
-              <button className="myButton rounded-pill w-100 mt-3" type="submit">
-                    Send Message
+              <button className="myButtonNew rounded-pill w-100 mt-3" type="submit">
+                    <span>Send Message</span>
                 </button>
             </Form>
           </div>

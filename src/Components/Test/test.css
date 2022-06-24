@@ -1,0 +1,30 @@
+/* 
+#container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#tsparticles {
+    position: absolute;
+    height: 100vh;
+    background: rgba(76, 13, 101, 0.407);
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: -1; 
+}
+#your-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#mydiv{
+    z-index: 10;
+}
+ */

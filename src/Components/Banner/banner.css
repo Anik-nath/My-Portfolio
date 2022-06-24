@@ -13,9 +13,9 @@ z-index: 1;
    left: 50%;
    transform: translate(-50%,30%);
 }
-.active{
+/* .active{
     background-color: #2d343e;
-}
+} */
 .overlay{
     position: absolute;
     height: 100%;
@@ -41,4 +41,8 @@ z-index: 1;
        margin-top: 5px;
        backdrop-filter: blur(6px);
     }
+}
+#tsparticles{
+    height: 100vh;
+    width: 100%;
 }

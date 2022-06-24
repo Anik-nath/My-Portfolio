@@ -33,7 +33,7 @@ const Review = () => {
                 className="mx-auto mb-3"
                 style={{ width: "80px", height: "80px" }}
               >
-                <img className="w-100 rounded-circle" src={buyer2} alt="" />
+                <img loading="lazy" className="w-100 rounded-circle" src={buyer2} alt="" />
               </div>
               <div>
                 <Card.Text>
@@ -57,7 +57,7 @@ const Review = () => {
                 className="mx-auto mb-3"
                 style={{ width: "80px", height: "80px" }}
               >
-                <img className="w-100 rounded-circle" src={buyer3} alt="" />
+                <img loading="lazy" className="w-100 rounded-circle" src={buyer3} alt="" />
               </div>
               <div>
                 <Card.Text>
@@ -81,7 +81,7 @@ const Review = () => {
                 className="mx-auto mb-3"
                 style={{ width: "80px", height: "80px" }}
               >
-                <img className="w-100 rounded-circle" src={buyer1} alt="" />
+                <img loading="lazy" className="w-100 rounded-circle" src={buyer1} alt="" />
               </div>
               <div>
                 <Card.Text>

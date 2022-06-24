@@ -1,22 +1,21 @@
 import React, { useEffect } from "react";
-import image from "../../../images/myimage11.jpg";
-import skill1 from "../../../images/html.png";
-import skill2 from "../../../images/css.png";
-import skill3 from "../../../images/bootstrap.png";
-import skill4 from "../../../images/react.png";
-import skill5 from "../../../images/js.png";
-import skill6 from "../../../images/mongo.png";
-import skill7 from "../../../images/nodejs.png";
-import skill8 from "../../../images/Firebase.PNG";
-import skill9 from "../../../images/tailwind.PNG";
-import skill10 from "../../../images/MaterialUI.PNG";
-import skill11 from "../../../images/express-1.png";
-import tools1 from "../../../images/git.PNG";
-import tools2 from "../../../images/npm.PNG";
-import tools3 from "../../../images/Github.PNG";
-import tools4 from "../../../images/vscode.PNG";
-import tools5 from "../../../images/Heroku.PNG";
-import tools6 from "../../../images/Firebase.PNG";
+// import skill1 from "../../../images/html.png";
+// import skill2 from "../../../images/css.png";
+// import skill3 from "../../../images/bootstrap.png";
+// import skill4 from "../../../images/react.png";
+// import skill5 from "../../../images/js.png";
+// import skill6 from "../../../images/mongo.png";
+// import skill7 from "../../../images/nodejs.png";
+// import skill8 from "../../../images/Firebase.PNG";
+// import skill9 from "../../../images/tailwind.PNG";
+// import skill10 from "../../../images/MaterialUI.PNG";
+// import skill11 from "../../../images/express-1.png";
+// import tools1 from "../../../images/git.PNG";
+// import tools2 from "../../../images/npm.PNG";
+// import tools3 from "../../../images/Github.PNG";
+// import tools4 from "../../../images/vscode.PNG";
+// import tools5 from "../../../images/Heroku.PNG";
+// import tools6 from "../../../images/Firebase.PNG";
 import certificate from "../../../images/certificate.PNG";
 import { ProgressBar } from "react-bootstrap";
 import Aos from "aos";
@@ -33,16 +32,14 @@ const AboutMore = () => {
         <div className="row pt-5">
           <div className="col-lg-4 col-md-6 col-12 text-left">
             <img
+              loading="lazy"
               data-aos="fade-up-right"
               className="w-100"
-              src={image}
+              src="https://i.ibb.co/wQvZJRj/moreshape-2.png"
               alt=""
             />
           </div>
-          <div
-            data-aos="fade-up"
-            className="col-lg-8 col-md-6 col-12  mt-5 mt-md-0 mt-lg-0"
-          >
+          <div className="col-lg-8 col-md-6 col-12  mt-5 mt-md-0 mt-lg-0">
             <div className="mb-5">
               <h3 className="mb-0 text-uppercase">Who am i?</h3>
               <h6 className="text-white-50">What my skills?</h6>
@@ -90,186 +87,7 @@ const AboutMore = () => {
             </div>
           </div>
         </div>
-        {/* technology skill */}
-        <div id="skill" className="row py-5 mt-5">
-          <div className="row">
-            <div className="col-12 text-center pb-4">
-              <h3>
-                <i className="fas fa-code text-warning"></i> My Skills
-              </h3>
-            </div>
-          </div>
-          <div data-aos="fade-up" className="col-lg-2 py-2  col-4 col-md-2">
-            <div className="card">
-              <div className="card-body">
-                <img className="skillimage" src={skill1} alt="" />
-              </div>
-            </div>
-          </div>
-          <div data-aos="zoom-in" className="col-lg-2 py-2  col-4 col-md-2">
-            <div className="card">
-              <div className="card-body">
-                <img className="skillimage" src={skill2} alt="" />
-              </div>
-            </div>
-          </div>
-          <div data-aos="fade-up" className="col-lg-2 py-2  col-4 col-md-2">
-            <div className="card">
-              <div className="card-body">
-                <img className="skillimage" src={skill3} alt="" />
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-in"
-            className="col-lg-2 py-2  col-4 col-md-2 mt-3 mt-lg-0 mt-md-0"
-          >
-            <div className="card">
-              <div className="card-body">
-                <img className="skillimage" src={skill4} alt="" />
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="fade-up"
-            className="col-lg-2 py-2  col-4 col-md-2 mt-3 mt-lg-0 mt-md-0"
-          >
-            <div className="card">
-              <div className="card-body">
-                <img className="skillimage" src={skill5} alt="" />
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-in"
-            className="col-lg-2  py-2 col-4 col-md-2 mt-3 mt-lg-0 mt-md-0"
-          >
-            <div className="card">
-              <div className="card-body">
-                <img className="skillimage" src={skill6} alt="" />
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="fade-up"
-            className="col-lg-2 py-2  col-4 col-md-2 mt-3 mt-lg-0 mt-md-0"
-          >
-            <div className="card">
-              <div className="card-body">
-                <img className="skillimage" src={skill7} alt="" />
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-in"
-            className="col-lg-2 py-2  col-4 col-md-2 mt-3 mt-lg-0 mt-md-0"
-          >
-            <div className="card">
-              <div className="card-body">
-                <img
-                  className="skillimage rounded-circle"
-                  src={skill8}
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="fade-up"
-            className="col-lg-2 py-2  col-4 col-md-2 mt-3 mt-lg-0 mt-md-0"
-          >
-            <div className="card">
-              <div className="card-body">
-                <img className="skillimage" src={skill9} alt="" />
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-in"
-            className="col-lg-2 py-2  col-4 col-md-2 mt-3 mt-lg-0 mt-md-0"
-          >
-            <div className="card">
-              <div className="card-body">
-                <img className="skillimage" src={skill10} alt="" />
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="fade-up"
-            className="col-lg-2 py-2  col-4 col-md-2 mt-3 mt-lg-0 mt-md-0"
-          >
-            <div className="card">
-              <div className="card-body">
-                <img className="skillimage" src={skill11} alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* my tools */}
-        <div id="skill" className="row py-5 mt-5">
-          <div className="row">
-            <div className="col-12 text-center pb-4">
-              <h3>
-                <i className="fas fa-tools text-warning"></i> My Tools
-              </h3>
-            </div>
-          </div>
-          <div data-aos="fade-up" className="col-lg-2 py-2  col-4 col-md-2">
-            <div className="card">
-              <div className="card-body">
-                <img className="skillimage" src={tools1} alt="" />
-              </div>
-            </div>
-          </div>
-          <div data-aos="zoom-in" className="col-lg-2 py-2  col-4 col-md-2">
-            <div className="card">
-              <div className="card-body">
-                <img className="skillimage" src={tools2} alt="" />
-              </div>
-            </div>
-          </div>
-          <div data-aos="fade-up" className="col-lg-2 py-2  col-4 col-md-2">
-            <div className="card">
-              <div className="card-body">
-                <img className="skillimage" src={tools3} alt="" />
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-in"
-            className="col-lg-2 py-2  col-4 col-md-2 mt-3 mt-lg-0 mt-md-0"
-          >
-            <div className="card">
-              <div className="card-body">
-                <img className="skillimage" src={tools4} alt="" />
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="fade-up"
-            className="col-lg-2 py-2  col-4 col-md-2 mt-3 mt-lg-0 mt-md-0"
-          >
-            <div className="card">
-              <div className="card-body">
-                <img className="skillimage" src={tools5} alt="" />
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-in"
-            className="col-lg-2 py-2  col-4 col-md-2 mt-3 mt-lg-0 mt-md-0"
-          >
-            <div className="card">
-              <div className="card-body">
-                <img
-                  className="skillimage rounded-circle"
-                  src={tools6}
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        {/*  */}
       </div>
       <div className="container mt-5">
         <div className="col-12 text-center pb-4">
@@ -279,12 +97,7 @@ const AboutMore = () => {
         </div>
         <div className="row">
           <div className="col-lg-6 mx-auto text-center">
-            <img
-              data-aos="zoom-in"
-              className="w-100"
-              src={certificate}
-              alt=""
-            />
+            <img loading="lazy" className="w-100" src={certificate} alt="" />
             <div className="my-5">
               <a
                 target="_blank"

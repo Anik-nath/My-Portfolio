@@ -45,7 +45,7 @@
   border: none;
   text-decoration: none;
   font-family: "Quicksand", sans-serif;
-  border-radius: 25px 25px 0px 25px;
+  border-radius: 30px;
 }
 
 .type,
@@ -84,10 +84,10 @@
 .myButton:hover,
 .cardButton:hover {
   color: #fff;
-  background-color: #218859;
+  background-color: #01d85f;
 }
 #social a i:hover {
-  color: #2ca46d;
+  color: #01d85f;
 }
 .styles_scroll-to-top__2A70v {
   background-color: transparent !important;
@@ -97,4 +97,49 @@
 }
 .styles_scroll-to-top__2A70v:hover {
   background-color: #2d343e !important ;
+}
+.myButtonNew{
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #218859;
+  padding: 17px 60px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+.myButtonNew span {
+  position: relative; 
+  z-index: 1;
+}
+
+.myButtonNew:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 900%;
+  width: 140%;
+  cursor: pointer;
+  background: #01d85f;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.myButtonNew:hover:after {
+  cursor: pointer;
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+.active{
+  background-color: #2d343e;
 }

@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import image from "../../images/about.png";
-import signature from "../../images/signature.png";
+// import image from "../../images/about.png";
+// import signature from "../../images/signature.png";
 import Aos from "aos";
+import {Row,Col} from "react-bootstrap"
 
 const About = () => {
   useEffect(() => {
@@ -30,7 +31,7 @@ const About = () => {
         </div>
         <div className="row">
           <div className="col-lg-6 col-md-6 col-12">
-            <img data-aos="fade-right" className="w-100" src={image} alt="" />
+            <img loading="lazy" data-aos="fade-right" className="w-full img-fluid" src="https://i.ibb.co/W3vmNxJ/anikshape-2.png" alt="" />
           </div>
           <div
             data-aos="fade-up"
@@ -45,18 +46,33 @@ const About = () => {
               className="text-light"
             >
               <p>
-                My name is Anik Deb nath. I am a Web Developer, and I'm very
+               I am MERN stack Developer, and I'm very
                 passionate and dedicated to my work. I am a person who is positive in every aspect of life.
               </p>
               <p>
-                I have vast knowledge in html, css, Javascript , React
-                (javascript framewok), Tailwind , Material Ui, Firebase and so
+                My skill sets are HTML5, CSS3, Javascript , React , Next Js, Tailwind , Material Ui, Node js, Express Js, Firebase and so
                 on. The work I provide is of highest quality, fully responsive,
                 and tested in a wide range of devices.
               </p>
-              <div>
-                <img src={signature} alt="" />
+              <div id="infor" className="py-4">
+                <Row>
+                  <Col sm={6}>
+                    <small>Fullname : Anik Deb Nath</small>
+                  </Col>
+                  <Col sm={6}>
+                    <small>Address : Chittagong, Bangladesh</small>
+                  </Col>
+                  <Col sm={6}>
+                    <small>Birthday : 03-11-2000</small>
+                  </Col>
+                  <Col sm={6}>
+                    <small>Mail : anikdevnath03112000@gmail.com</small>
+                  </Col>
+                </Row>
               </div>
+              {/* <div id="signature" className="">
+                <img src={signature} alt="anik signature" />
+              </div> */}
             </div>
             <a
               target="_blank"

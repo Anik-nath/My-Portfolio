@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Aos from 'aos';
 
 const Blogs = () => {
-
   useEffect(()=>{
     Aos.init({duration:1000});
   },[]);
@@ -17,7 +16,6 @@ const Blogs = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };
