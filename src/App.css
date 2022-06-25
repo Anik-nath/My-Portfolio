@@ -1,14 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap");
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -21,17 +11,17 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-thumb {
+  background: #232a34;
+  border-radius: 25px;
+  border: 2px solid #fff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2ca46d;
 }
 .myButton {
   background: #2ca46d;
@@ -86,8 +76,20 @@
   color: #fff;
   background-color: #01d85f;
 }
-#social a i:hover {
-  color: #01d85f;
+#social a .facebook:hover {
+  color:#1877f2;
+}
+#social a .instagram:hover {
+  color:  #c32aa3;
+}
+#social a .twitter:hover {
+  color: #1da1f2;
+}
+#social a .linkedin:hover {
+  color: #0a66c2;
+}
+#social a .github:hover {
+  color: #014c6f;
 }
 .styles_scroll-to-top__2A70v {
   background-color: transparent !important;
@@ -98,7 +100,7 @@
 .styles_scroll-to-top__2A70v:hover {
   background-color: #2d343e !important ;
 }
-.myButtonNew{
+.myButtonNew {
   border: none;
   display: block;
   text-align: center;
@@ -113,10 +115,10 @@
   background-color: #218859;
   padding: 17px 60px;
   margin: 0 auto;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 .myButtonNew span {
-  position: relative; 
+  position: relative;
   z-index: 1;
 }
 
@@ -129,8 +131,8 @@
   width: 140%;
   cursor: pointer;
   background: #01d85f;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
   transform: translateX(-98%) translateY(-25%) rotate(45deg);
 }
@@ -140,6 +142,24 @@
   -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
-.active{
+.active {
   background-color: #2d343e;
+}
+
+/* image scroll effet for project */
+.window{
+  width: 100%;
+  margin: auto;
+}
+.window img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    height: 270px;
+    transition: 8s all ease;
+    border-radius: 2px;
+}
+.window img:hover {
+  object-position: bottom;
+  cursor: n-resize;
 }

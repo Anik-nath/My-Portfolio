@@ -61,7 +61,7 @@ const Contact = () => {
               >
                 <Form.Control className="cardbgColor border-0 rounded text-white" as="textarea" name="message" rows={4} placeholder="Your Message"  />
               </Form.Group>
-              <button className="myButtonNew rounded-pill w-100 mt-3" type="submit">
+              <button className="myButtonNew rounded-pill w-100 mt-3 py-3" type="submit">
                     <span>Send Message</span>
                 </button>
             </Form>
@@ -76,3 +76,11 @@ const Contact = () => {
 };
 
 export default Contact;
+
+/* 
+http://preview.themeforest.net/item/trydo-creative-agency-react-template/full_screen_preview/25457315?_ga=2.44263971.622514835.1610510661-933693064.1600738304&clickid=TN80is2XCxyIWE2wQIVNPydYUkDzbl3Rq3GW1E0&iradid=275988&iradtype=ONLINE_TRACKING_LINK&irgwc=1&irmptype=mediapartner&irpid=2305834&mp_value1=&utm_campaign=af_impact_radius_2305834&utm_medium=affiliate&utm_source=impact_radius
+
+https://reactjsexample.com/22-best-react-portfolio-page-templates-in-2021/
+
+https://cheaphostings.net/html/tf/nick-berg/nick-berg/index.html
+*/

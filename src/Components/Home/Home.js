@@ -5,6 +5,7 @@ import Banner from "../Banner/Banner";
 import Contact from "../Contact/Contact";
 import Projects from "../Projects/Projects";
 import Review from "../Review/Review";
+import WhatIDo from "../WhatIDo/WhatIDo";
 const About = React.lazy(() => import("../About/About"));
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
         <Suspense fallback={<div>Loading...</div>}>
           <About />
         </Suspense>
+        <WhatIDo></WhatIDo>
         <Projects></Projects>
         <Review></Review>
         <Contact></Contact>

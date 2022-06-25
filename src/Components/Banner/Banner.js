@@ -115,11 +115,11 @@ const Banner = () => {
         </h2>
         <div className="container d-flex justify-content-center align-items-center my-3 ">
           <div id="social" className="d-flex gap-4">
-              <a data-aos="fade-down" className='text-white-50' href="https://www.facebook.com/aaroon.fince/"><i className="fab fa-facebook h4"></i></a>
-              <a data-aos="fade" className='text-white-50' href="https://twitter.com/aniknathdev"><i className="fab fa-twitter h4"></i></a>
-              <a data-aos="fade-down" className='text-white-50' href="https://www.linkedin.com/in/anik-deb-nath-26aa22190/"><i className="fab fa-linkedin h4"></i></a>
-              <a data-aos="fade" className='text-white-50' href="https://github.com/Anik-nath"><i className="fab fa-github h4"></i></a>
-              <a data-aos="fade-down" className='text-white-50' href="#!"><i className="fab fa-instagram h4"></i></a>
+              <a data-aos="fade-down" className='text-white-50' href="https://www.facebook.com/aaroon.fince/"><i className="fab fa-facebook h4 facebook"></i></a>
+              <a data-aos="fade" className='text-white-50' href="https://twitter.com/aniknathdev"><i className="fab fa-twitter h4 twitter"></i></a>
+              <a data-aos="fade-down" className='text-white-50' href="https://www.linkedin.com/in/anik-deb-nath-26aa22190/"><i className="fab fa-linkedin h4 linkedin"></i></a>
+              <a data-aos="fade" className='text-white-50' href="https://github.com/Anik-nath"><i className="fab fa-github h4 github"></i></a>
+              <a data-aos="fade-down" className='text-white-50' href="#!"><i className="fab fa-instagram h4 instagram"></i></a>
           </div>
         </div>
         <div className="contact-button rounded-pill">

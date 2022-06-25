@@ -1,8 +1,5 @@
 import React, { useEffect } from "react";
 import { Card } from "react-bootstrap";
-import project1 from "../../images/p1.png";
-import project2 from "../../images/p2.png";
-import project3 from "../../images/p4.png";
 import Aos from "aos";
 import { Link } from "react-router-dom";
 
@@ -33,9 +30,11 @@ const Projects = () => {
         <div className="row">
           <div id="travel" className="col-lg-4 col-md-4 col-12">
             <Card className="cardbgColor text-center">
-              <Card.Img loading="lazy" variant="top" src={project2} />
+            <div className="window">
+                <img loading="lazy" src="https://i.ibb.co/9Nw0B6c/screencapture-travel-site-4b05c-web-app-2022-01-19-21-59-43.png" alt="" />
+             </div>
               <Card.Body>
-                <Card.Title>Travel Booking</Card.Title>
+                <Card.Title className="py-2">Travel Booking</Card.Title>
                 <Card.Text className="d-flex flex-wrap gap-2 py-2">
                   <span className="border border-secondary px-2 rounded-pill">
                     HTML5
@@ -81,11 +80,13 @@ const Projects = () => {
               </Card.Body>
             </Card>
           </div>
-          <div id="foodmart" className="col-lg-4 col-md-4 col-12">
+          <div id="foodmart" className="col-lg-4 col-md-4 col-12 my-5 my-lg-0 my-md-0">
             <Card className="cardbgColor text-center">
-              <Card.Img variant="top" src={project3} />
+             <div className="window">
+                <img loading="lazy" src="https://i.ibb.co/hgrjDzw/foodMart.png" alt="" />
+             </div>
               <Card.Body>
-                <Card.Title>FoodMart</Card.Title>
+                <Card.Title className="py-2">FoodMart - Team Works</Card.Title>
                 <Card.Text className="d-flex flex-wrap gap-2 py-2">
                   <span className="border border-secondary px-2 rounded-pill">
                     NextJs
@@ -134,11 +135,13 @@ const Projects = () => {
               </Card.Body>
             </Card>
           </div>
-          <div id="cycleshop" className="col-lg-4 col-md-4 col-12 my-5 my-lg-0 my-md-0">
+          <div id="cycleshop" className="col-lg-4 col-md-4 col-12 ">
             <Card className="cardbgColor text-center">
-              <Card.Img variant="top" src={project1} />
+            <div className="window">
+                <img loading="lazy" src="https://i.ibb.co/sH2sK7k/screencapture-cycle-shop-62d0c-web-app-home-2021-11-14-01-46-59.png" alt="" />
+             </div>
               <Card.Body>
-                <Card.Title>Cycle Shop</Card.Title>
+                <Card.Title className="py-2">Cycle Shop</Card.Title>
                 <Card.Text className="d-flex flex-wrap gap-2 py-2">
                   <span className="border border-secondary px-2 rounded-pill">
                     HTML5
@@ -189,7 +192,7 @@ const Projects = () => {
         <div className="text-center mt-5">
           <Link to="/projects">
             <button className="btn btn-outline-success rounded-pill px-4">
-              See All
+              See All Works
             </button>
           </Link>
         </div>
