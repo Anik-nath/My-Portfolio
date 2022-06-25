@@ -38,7 +38,7 @@ function App() {
       setLoading(false);
     }, 3000);
   }, []);
-  secretFunction();
+  // secretFunction();
   return (
     <div className="App">
       <Suspense fallback={<div style={{ height: "100vh" }} className="bg-dark w-full"></div>}>

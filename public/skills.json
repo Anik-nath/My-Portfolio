@@ -1,0 +1,59 @@
+[
+    {
+        "skillName" : "Html",
+        "skillImage" : "https://i.ibb.co/0CfjpQJ/html.png"
+    },
+    {
+        "skillName" : "css",
+        "skillImage" : "https://i.ibb.co/smD5stZ/css.png"
+    },
+    {
+        "skillName" : "js",
+        "skillImage" : "https://i.ibb.co/Qj0S9tT/js.png"
+    },
+    {
+        "skillName" : "react",
+        "skillImage" : "https://i.ibb.co/ZhwD655/react.png"
+    },
+    {
+        "skillName" : "nodejs",
+        "skillImage" : "https://i.ibb.co/f9kkLHm/nodejs.png"
+    },
+    {
+        "skillName" : "express",
+        "skillImage" : "https://i.ibb.co/RHtRTv4/express-1.png"
+    },
+    {
+        "skillName" : "firebase",
+        "skillImage" : "https://i.ibb.co/k6gfMPP/Firebase.png"
+    },
+    {
+        "skillName" : "mongodb",
+        "skillImage" : "https://i.ibb.co/7rnfbmH/mongo.png"
+    },
+    {
+        "skillName" : "bootstrap",
+        "skillImage" : "https://i.ibb.co/pRMCdHF/bootstrap.png"
+    },
+    {
+        "skillName" : "Nextjs",
+        "skillImage" : "https://i.ibb.co/gRr0jvt/nextjs-boilerplate-logo-1.png"
+    },
+    {
+        "skillName" : "tailwind",
+        "skillImage" : "https://i.ibb.co/3pMQG7Y/tailwind.png"
+    },
+    {
+        "skillName" : "MUI",
+        "skillImage" : "https://i.ibb.co/gTCgpKf/Material-UI.png"
+    }
+]
+
+
+
+
+
+
+
+
+

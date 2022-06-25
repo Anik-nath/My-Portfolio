@@ -1,0 +1,34 @@
+[
+    {
+        "toolsName" : "git",
+        "toolsImage" : "https://i.ibb.co/c3Hs47Z/git.png"
+    },
+    {
+        "toolsName" : "npm",
+        "toolsImage" : "https://i.ibb.co/5Whhx1q/npm.png"
+    },
+    {
+        "toolsName" : "firebase",
+        "toolsImage" : "https://i.ibb.co/k6gfMPP/Firebase.png"
+    },
+    {
+        "toolsName" : "Github",
+        "toolsImage" : "https://i.ibb.co/HqfDRLq/Github.png"
+    },
+    {
+        "toolsName" : "vscode",
+        "toolsImage" : "https://i.ibb.co/8DkwDKr/vscode.png"
+    },
+    {
+        "toolsName" : "Heroku",
+        "toolsImage" : "https://i.ibb.co/qrqZW4P/Heroku.png"
+    },
+    {
+        "toolsName" : "Photoshop",
+        "toolsImage" : "https://i.ibb.co/Gc8xQXx/png-transparent-photoshop-2020-logo-icon-thumbnail.png"
+    }
+]
+
+
+
+

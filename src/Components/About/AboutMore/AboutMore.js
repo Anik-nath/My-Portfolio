@@ -1,26 +1,25 @@
-import React, { useEffect } from "react";
-// import skill1 from "../../../images/html.png";
-// import skill2 from "../../../images/css.png";
-// import skill3 from "../../../images/bootstrap.png";
-// import skill4 from "../../../images/react.png";
-// import skill5 from "../../../images/js.png";
-// import skill6 from "../../../images/mongo.png";
-// import skill7 from "../../../images/nodejs.png";
-// import skill8 from "../../../images/Firebase.PNG";
-// import skill9 from "../../../images/tailwind.PNG";
-// import skill10 from "../../../images/MaterialUI.PNG";
-// import skill11 from "../../../images/express-1.png";
-// import tools1 from "../../../images/git.PNG";
-// import tools2 from "../../../images/npm.PNG";
-// import tools3 from "../../../images/Github.PNG";
-// import tools4 from "../../../images/vscode.PNG";
-// import tools5 from "../../../images/Heroku.PNG";
-// import tools6 from "../../../images/Firebase.PNG";
+import React, { useEffect, useState } from "react";
+import {Tabs,Tab,Row,Col,Card} from "react-bootstrap"
 import certificate from "../../../images/certificate.PNG";
 import { ProgressBar } from "react-bootstrap";
 import Aos from "aos";
 
 const AboutMore = () => {
+  const [skills,setSkills] = useState([]);
+  const [tools,setTools] = useState([]);
+
+  useEffect(() =>{
+      fetch('./skills.json')
+      .then(res => res.json())
+      .then(data => setSkills(data))
+  },[]);
+
+  useEffect(() =>{
+      fetch('./tools.json')
+      .then(res => res.json())
+      .then(data => setTools(data))
+  },[]);
+
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -29,7 +28,7 @@ const AboutMore = () => {
     <div id="about-more" className="myBgColor text-white py-5">
       <div className="container mt-5">
         {/* about me */}
-        <div className="row pt-5">
+        <div className="row py-5">
           <div className="col-lg-4 col-md-6 col-12 text-left">
             <img
               loading="lazy"
@@ -88,6 +87,70 @@ const AboutMore = () => {
           </div>
         </div>
         {/*  */}
+        <Tabs defaultActiveKey="skills"
+          transition={false}
+          id="noanim-tab-example"
+          className="mb-3"
+        >
+          <Tab className="text-danger" eventKey="skills" title="Skills">
+            <Row className="py-3">
+              {
+                skills.map(skill => 
+                  <Col className="d-flex justify-content-center" key={skill.skillName} md={2} sm={4} xs={4}>
+                  <Card style={{width: "100px",height:"100px"}} className="rounded-circle mx-2 my-3 border">
+                    <img
+                      loading="lazy"
+                      className="w-100 h-100 p-4"
+                      src={skill.skillImage}
+                      alt=""
+                    />
+                  </Card>
+                </Col>
+                  )
+              }
+            </Row>
+          </Tab>
+          <Tab eventKey="tools" title="Tools">
+          <Row className="py-3">
+              {
+                tools.map(tool => 
+                  <Col className="d-flex justify-content-center" key={tool.toolsName} md={3} sm={4} xs={4}>
+                  <Card style={{width: "100px",height:"100px"}} className="rounded-circle mx-2 my-3 border">
+                    <img
+                      loading="lazy"
+                      className="w-100 h-100 p-4"
+                      src={tool.toolsImage}
+                      alt="tool icon"
+                    />
+                  </Card>
+                </Col>
+                  )
+              }
+            </Row>
+          </Tab>
+          <Tab eventKey="education" title="Education">
+           <Row>
+            <Col md={6} sm={6}>
+              <div className="card text-black p-4 mb-4">
+                <h6 className="fw-bold">Premier University, Chittagong</h6>
+                <p><span className="text-success fw-bold">Present -</span> B.sc in CSE</p>
+              </div>
+            </Col>
+            <Col md={6} sm={6}>
+              <div className="card text-black p-4 mb-4">
+                <h6 className="fw-bold">BAF Shaheen Collage, Chittagong</h6>
+                <p><span className="text-success fw-bold">2018-</span> Higher Secondary Certificate</p>
+              </div>
+            </Col>
+            <Col md={6} sm={6}>
+              <div className="card text-black p-4 mb-4">
+                <h6 className="fw-bold">Jafar Nagar A.C High School, Sitakund, Chittagong</h6>
+                <p><span className="text-success fw-bold">2016-</span> Secondary School Certificate</p>
+              </div>
+            </Col>
+           </Row>
+          </Tab>
+        </Tabs>
       </div>
       <div className="container mt-5">
         <div className="col-12 text-center pb-4">
