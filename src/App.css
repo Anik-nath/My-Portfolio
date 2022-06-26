@@ -53,6 +53,14 @@
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
 }
+.my-title span{
+  color: transparent;
+  font-size: 56px;
+  -webkit-text-stroke: 1px #ffffff20 
+}
+.my-secondary-text{
+  color: rgba(255, 255, 255, 0.5);
+}
 .myBgColor {
   background-color: #232a34;
 }
@@ -178,4 +186,91 @@
 }
 .nav-tabs .nav-link:hover{
   border-color: transparent !important;
+}
+
+
+/* ---------light mode css---------- */
+body.light-mode {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+body.dark-mode .dark-mode-toggle > button {
+  color: #999;
+}
+body.light-mode #topBar .navbar {
+  background-color: #232a34;
+}
+body.light-mode #topBar .navbar .nav-link{
+  color: #ffff !important;
+}
+body.light-mode #aboutme{
+  background-color: #fff;
+}
+body.light-mode #aboutme .light-base-text
+{
+  color: #000;
+}
+body.light-mode .my-title {
+  color: #000;
+}
+body.light-mode .my-title span {
+  color: transparent ;
+  -webkit-text-stroke: 1px rgba(116, 113, 113, 0.341);
+}
+body.light-mode .myBgColor {
+  background-color: #fff;
+}
+body.light-mode .my-secondary-text{
+  color: #000;
+}
+body.light-mode .light-tab-bg{
+  background-color: #ffffff39;
+  box-shadow: 0px 1px 4px 0px #ccc;
+}
+body.light-mode .nav-tabs .nav-link{
+  color: #218859 !important;
+}
+/*------------------------ darkmode css---------------- */
+body.dark-mode {
+  background-color: #10171d;
+  color: #dfdfdf;
+}
+body.dark-mode .dark-mode-toggle > button:last-child {
+  color: lightblue;
+}
+
+body.dark-mode .content code {
+    background-color: #1b2938;
+}
+  
+body.dark-mode .content a {
+    color: #ee09;
+}
+  
+body.dark-mode .content button {
+    color: #ee09;
+}
+
+.dark-mode-toggle {
+    display: flex;
+    margin: 0 auto;
+  }
+.dark-mode-toggle > button {
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    color: #ffe600;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.dark-mode-toggle > button:last-child {
+    color: #666;
+  }
+.dark-mode-toggle > button:focus {
+    outline: none;
+  }
+
+::-webkit-scrollbar-track{
+  background-color: #fff;
 }

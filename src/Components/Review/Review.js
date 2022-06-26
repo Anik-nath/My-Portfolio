@@ -14,11 +14,6 @@ const Review = () => {
             <h2 className="position-relative pb-5 my-title">
               What Buyers Says
               <span
-                style={{
-                  color: "transparent",
-                  WebkitTextStroke: "1px #ffffff20",
-                  fontSize: "56px",
-                }}
                 className="position-absolute start-0 bottom-50 mb-2 text-uppercase"
               >
                 Reviews

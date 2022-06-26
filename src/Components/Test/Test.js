@@ -1,6 +1,12 @@
 import React from "react";
 import "./test.css";
 import Particles from "react-tsparticles";
+import DarkMode from "../DarkMode/DarkMode";
+import DarkModeStatus from "../DarkMode/DarkModeStatus";
+import DarkModeCommands from "../DarkMode/DarkModeCommands";
+
+
+
 const Test = () => {
   const particlesInit = (main) => {
     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
@@ -93,7 +99,26 @@ const Test = () => {
           </div>
         <div id="your-div">
           <h1>welcome</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut dolorem quam sint ipsa amet quasi quas commodi illo est unde magnam temporibus adipisci atque quaerat voluptatum, nesciunt doloribus molestiae error dolorum, ducimus recusandae odit perferendis voluptatibus! Corporis ipsam earum ad quaerat aspernatur, corrupti tempora ducimus temporibus eius, inventore sit nesciunt.</p>
+          <div>
+            <DarkMode></DarkMode>
+          </div>
+          <div className="content">
+            <h1>useDarkMode</h1>
+            <p>
+              For example, here is a component that shares the custom hook{' '}
+              <code>useDarkMode</code> with the toggle component above.
+            </p>
+            <p>
+              It is reporting that the current mode is:{' '}
+              <code>
+                <DarkModeStatus />
+              </code>
+            </p>
+            <p>
+              And here's another: <DarkModeCommands />
+            </p>
+            <p>It couldn't be any easier!</p>
+          </div>
         </div>
       </div>
       <div id="mydiv">

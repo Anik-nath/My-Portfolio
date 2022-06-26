@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
 import brand from '../../images/anik_logo.png';
+import DarkMode from "../DarkMode/DarkMode";
 
 const Navigation = () => {
     const [shownavbar,setNavbar] = useState(false);
@@ -37,6 +38,7 @@ const Navigation = () => {
               {/* <Nav.Link className="text-white hoverMe fw-bold ms-lg-3" as={HashLink} to="/review">Testimonials</Nav.Link> */}
               <Nav.Link className="text-white hoverMe fw-bold ms-lg-3" as={HashLink} to="/blogs">Blogs</Nav.Link>
               <Nav.Link className="text-white hoverMe fw-bold ms-lg-3" as={HashLink} to="/contact">Contact</Nav.Link>
+              <DarkMode></DarkMode>
             </Nav>
 
           </Navbar.Collapse>

@@ -15,11 +15,6 @@ const Projects = () => {
             <h2 className="position-relative pb-5 my-title">
               Featured Work
               <span
-                style={{
-                  color: "transparent",
-                  WebkitTextStroke: "1px #ffffff20",
-                  fontSize: "56px",
-                }}
                 className="position-absolute start-0 bottom-50 mb-2 text-uppercase"
               >
                 Projects

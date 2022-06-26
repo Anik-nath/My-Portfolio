@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-// import image from "../../images/about.png";
-// import signature from "../../images/signature.png";
 import Aos from "aos";
 import {Row,Col} from "react-bootstrap"
 
@@ -17,11 +15,7 @@ const About = () => {
             <h1 className="position-relative pb-5 my-title">
               About Me
               <span
-                style={{
-                  color: "transparent",
-                  WebkitTextStroke: "1px #ffffff20",
-                  fontSize: "56px",
-                }}
+
                 className="position-absolute start-0 bottom-50 mb-2 text-uppercase"
               >
                 Intro
@@ -39,22 +33,22 @@ const About = () => {
           >
             <div className="mb-5">
             
-              <h6 className="text-light">Hello There !</h6>
+              <h6 className="light-base-text">Hello There !</h6>
             </div>
             <div
               style={{ textAlign: "justify" }}
               className="text-light"
             >
-              <p>
+              <p className="light-base-text">
                I am MERN stack Developer, and I'm very
                 passionate and dedicated to my work. I am a person who is positive in every aspect of life.
               </p>
-              <p>
+              <p className="light-base-text">
                 My skill sets are HTML5, CSS3, Javascript , React , Next Js, Tailwind , Material Ui, Node js, Express Js, Firebase and so
                 on. The work I provide is of highest quality, fully responsive,
                 and tested in a wide range of devices.
               </p>
-              <div id="infor" className="py-4">
+              <div id="infor" className="py-4 light-base-text">
                 <Row>
                   <Col sm={6}>
                     <small>Fullname : Anik Deb Nath</small>
