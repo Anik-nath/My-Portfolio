@@ -74,7 +74,8 @@ const AboutMore = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-4">
+            <div className="d-flex flex-row gap-2">
+            <div id="cv-button" className="mt-4">
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -84,9 +85,20 @@ const AboutMore = () => {
                 Download CV <i className="fas fa-download"></i>
               </a>
             </div>
+            <div id="recommendation-button" className="mt-4">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://drive.google.com/file/d/19Xxy5i6AVG9U1ZUTC_Wc4Mn6v9TwLlUe/view?usp=sharing"
+                className="myButton mt-3 m rounded-pill"
+              >
+                Recommendation <i className="fas fa-eye"></i>
+              </a>
+            </div>
+            </div>
           </div>
         </div>
-        {/*  */}
+        {/* skills, tools & education start */}
         <Tabs defaultActiveKey="skills"
           transition={false}
           id="noanim-tab-example"
@@ -129,7 +141,7 @@ const AboutMore = () => {
             </Row>
           </Tab>
           <Tab eventKey="education" title="Education">
-           <Row>
+           <Row className="p-3">
             <Col md={6} sm={6}>
               <div className="card text-black p-4 mb-4">
                 <h6 className="fw-bold">Premier University, Chittagong</h6>
@@ -151,8 +163,9 @@ const AboutMore = () => {
            </Row>
           </Tab>
         </Tabs>
+        {/* skills, tools & education end */}
       </div>
-      <div className="container mt-5">
+      <div id="certificates-section" className="container mt-5">
         <div className="col-12 text-center pb-4">
           <h3>
             <i className="fas fa-trophy text-warning"></i> Got Certificates
@@ -160,17 +173,10 @@ const AboutMore = () => {
         </div>
         <div className="row">
           <div className="col-lg-6 mx-auto text-center">
+            <img loading="lazy" className="w-100" src="https://i.ibb.co/YhFmvf7/certificate-1.jpg" alt="" />
+          </div>
+          <div className="col-lg-6 mx-auto text-center">
             <img loading="lazy" className="w-100" src={certificate} alt="" />
-            <div className="my-5">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.freecodecamp.org/certification/anikdebnath/responsive-web-design"
-                className="myButton mt-3 rounded-pill"
-              >
-                Check Certificates
-              </a>
-            </div>
           </div>
         </div>
       </div>
