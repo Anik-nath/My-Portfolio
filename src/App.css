@@ -53,12 +53,12 @@
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
 }
-.my-title span{
+.my-title span {
   color: transparent;
   font-size: 56px;
-  -webkit-text-stroke: 1px #ffffff20 
+  -webkit-text-stroke: 1px #ffffff20;
 }
-.my-secondary-text{
+.my-secondary-text {
   color: rgba(255, 255, 255, 0.5);
 }
 .myBgColor {
@@ -85,10 +85,10 @@
   background-color: #01d85f;
 }
 #social a .facebook:hover {
-  color:#1877f2;
+  color: #1877f2;
 }
 #social a .instagram:hover {
-  color:  #c32aa3;
+  color: #c32aa3;
 }
 #social a .twitter:hover {
   color: #1da1f2;
@@ -100,13 +100,13 @@
   color: #014c6f;
 }
 .styles_scroll-to-top__2A70v {
-  background-color: transparent !important;
+  background-color: #2ca46d !important;
   box-shadow: none !important;
-  border: 1px solid #2d343e !important;
+  /* border: 1px solid #2d343e !important; */
   border-radius: 50% !important;
 }
 .styles_scroll-to-top__2A70v:hover {
-  background-color: #2d343e !important ;
+  background-color: #01d85f !important ;
 }
 .myButtonNew {
   border: none;
@@ -154,28 +154,32 @@
   background-color: #2d343e;
 }
 
-/* image scroll effet for project */
-.window{
+/* --------------------------
+image scroll effet for project
+-----------------------------*/
+.window {
   width: 100%;
   margin: auto;
 }
 .window img {
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-    height: 270px;
-    transition: 8s all ease;
-    border-radius: 2px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  height: 270px;
+  transition: 8s all ease;
+  border-radius: 2px;
 }
 .window img:hover {
   object-position: bottom;
   cursor: n-resize;
 }
-/* tab customize */
+/*------------------------------
+tab customize
+-------------------------------*/
 .nav-tabs .nav-link {
   color: #fff !important;
 }
-.nav-tabs .nav-link.active{
+.nav-tabs .nav-link.active {
   color: #2ca46d !important;
   background-color: transparent !important;
   border-top: none !important;
@@ -184,12 +188,13 @@
   border-bottom: 4px solid #2ca46d !important;
   font-weight: bold;
 }
-.nav-tabs .nav-link:hover{
+.nav-tabs .nav-link:hover {
   border-color: transparent !important;
 }
 
-
-/* ---------light mode css---------- */
+/* ------------------------------
+light mode css
+--------------------------------- */
 body.light-mode {
   background-color: #fff;
   color: #333;
@@ -201,76 +206,68 @@ body.dark-mode .dark-mode-toggle > button {
 body.light-mode #topBar .navbar {
   background-color: #232a34;
 }
-body.light-mode #topBar .navbar .nav-link{
+body.light-mode #topBar .navbar .nav-link {
   color: #ffff !important;
 }
-body.light-mode #aboutme{
+body.light-mode #aboutme {
   background-color: #fff;
 }
-body.light-mode #aboutme .light-base-text
-{
+body.light-mode #aboutme .light-base-text {
   color: #000;
 }
 body.light-mode .my-title {
-  color: #000;
+  color: #2d343e;
 }
 body.light-mode .my-title span {
-  color: transparent ;
-  -webkit-text-stroke: 1px rgba(116, 113, 113, 0.341);
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(143, 141, 141, 0.341);
 }
 body.light-mode .myBgColor {
   background-color: #fff;
 }
-body.light-mode .my-secondary-text{
+body.light-mode .cardbgColor {
+  background-color: #fff !important;
+  box-shadow: 0px 4px 8px 0px #ccc !important;
+  color: #2ca46d;
+}
+body.light-mode .my-secondary-text {
   color: #000;
 }
-body.light-mode .light-tab-bg{
+body.light-mode .light-tab-bg {
   background-color: #ffffff39;
-  box-shadow: 0px 1px 4px 0px #ccc;
+  box-shadow: 0px 2px 8px 0px #ccc;
 }
-body.light-mode .nav-tabs .nav-link{
+body.light-mode .nav-tabs .nav-link {
   color: #218859 !important;
 }
-/*------------------------ darkmode css---------------- */
+/*------------------------
+darkmode cs
+-------------------------- */
 body.dark-mode {
-  background-color: #10171d;
+  background-color: #232a34;
   color: #dfdfdf;
 }
 body.dark-mode .dark-mode-toggle > button:last-child {
-  color: lightblue;
+  color: rgb(145, 216, 240);
 }
-
-body.dark-mode .content code {
-    background-color: #1b2938;
-}
-  
-body.dark-mode .content a {
-    color: #ee09;
-}
-  
-body.dark-mode .content button {
-    color: #ee09;
-}
-
 .dark-mode-toggle {
-    display: flex;
-    margin: 0 auto;
-  }
+  display: flex;
+  margin: 0 auto;
+}
 .dark-mode-toggle > button {
-    font-size: 1.2em;
-    background: none;
-    border: none;
-    color: #ffe600;
-    cursor: pointer;
-    transition: color 0.3s ease;
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  color: #ffe600;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 .dark-mode-toggle > button:last-child {
-    color: #666;
-  }
+  color: #666;
+}
 .dark-mode-toggle > button:focus {
-    outline: none;
-  }
-
-::-webkit-scrollbar-track{
+  outline: none;
+}
+::-webkit-scrollbar-track {
   background-color: #fff;
 }

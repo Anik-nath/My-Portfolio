@@ -13,7 +13,7 @@ const Contact = () => {
         })
     }
   return (
-    <div className="myBgColor text-white py-5">
+    <div className="myBgColor light-base-text py-5">
       <div className="container my-5 py-5">
         <div className="row">
           <div className="col-12">
@@ -35,28 +35,28 @@ const Contact = () => {
                 controlId="exampleForm.ControlInput1"
               >
                 
-                <Form.Control className="cardbgColor border-0 rounded-pill text-white" type="fullname" name="fullname" placeholder="Your fullname" />
+                <Form.Control required className="border py-3 light-base-text" type="fullname" name="fullname" placeholder="Your fullname" />
               </Form.Group>
               <Form.Group
                 className="mb-3"
                 controlId="exampleForm.ControlInput1"
               >
               
-                <Form.Control className="cardbgColor border-0 rounded-pill text-white" type="email" name="email" placeholder="name@example.com" />
+                <Form.Control required className="border py-3 light-base-text" type="email" name="email" placeholder="name@example.com" />
               </Form.Group>
               <Form.Group
                 className="mb-3"
                 controlId="exampleForm.ControlTextarea2"
               >
-              <Form.Control className="cardbgColor border-0 rounded-pill text-white" type="subject" name="subject" placeholder="Subject" />
+              <Form.Control required className="border py-3 light-base-text" type="subject" name="subject" placeholder="Subject" />
               </Form.Group>
               <Form.Group
                 className="mb-3"
                 controlId="exampleForm.ControlTextarea3"
               >
-                <Form.Control className="cardbgColor border-0 rounded text-white" as="textarea" name="message" rows={4} placeholder="Your Message"  />
+                <Form.Control required className="border rounded light-base-text" as="textarea" name="message" rows={4} placeholder="Your Message"  />
               </Form.Group>
-              <button className="myButtonNew rounded-pill w-100 mt-3 py-3" type="submit">
+              <button className="myButton rounded-pill mt-3 py-2" type="submit">
                     <span>Send Message</span>
                 </button>
             </Form>
@@ -72,10 +72,3 @@ const Contact = () => {
 
 export default Contact;
 
-/* 
-http://preview.themeforest.net/item/trydo-creative-agency-react-template/full_screen_preview/25457315?_ga=2.44263971.622514835.1610510661-933693064.1600738304&clickid=TN80is2XCxyIWE2wQIVNPydYUkDzbl3Rq3GW1E0&iradid=275988&iradtype=ONLINE_TRACKING_LINK&irgwc=1&irmptype=mediapartner&irpid=2305834&mp_value1=&utm_campaign=af_impact_radius_2305834&utm_medium=affiliate&utm_source=impact_radius
-
-https://reactjsexample.com/22-best-react-portfolio-page-templates-in-2021/
-
-https://cheaphostings.net/html/tf/nick-berg/nick-berg/index.html
-*/

@@ -12,7 +12,7 @@ const About = () => {
       <div className="container mt-5">
         <div className="row">
           <div className="col-12">
-            <h1 className="position-relative pb-5 my-title">
+            <h2 className="position-relative pb-5 my-title">
               About Me
               <span
 
@@ -20,7 +20,7 @@ const About = () => {
               >
                 Intro
               </span>
-            </h1>
+            </h2>
           </div>
         </div>
         <div className="row">

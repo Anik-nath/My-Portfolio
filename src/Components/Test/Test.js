@@ -2,10 +2,6 @@ import React from "react";
 import "./test.css";
 import Particles from "react-tsparticles";
 import DarkMode from "../DarkMode/DarkMode";
-import DarkModeStatus from "../DarkMode/DarkModeStatus";
-import DarkModeCommands from "../DarkMode/DarkModeCommands";
-
-
 
 const Test = () => {
   const particlesInit = (main) => {
@@ -107,15 +103,6 @@ const Test = () => {
             <p>
               For example, here is a component that shares the custom hook{' '}
               <code>useDarkMode</code> with the toggle component above.
-            </p>
-            <p>
-              It is reporting that the current mode is:{' '}
-              <code>
-                <DarkModeStatus />
-              </code>
-            </p>
-            <p>
-              And here's another: <DarkModeCommands />
             </p>
             <p>It couldn't be any easier!</p>
           </div>

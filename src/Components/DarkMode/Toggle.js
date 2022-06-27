@@ -1,5 +1,4 @@
 import React from 'react';
-import './darkmode.css';
 import './toggle.css';
 
 const Toggle = ({ checked, onChange }) => (

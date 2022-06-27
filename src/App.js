@@ -4,12 +4,6 @@ import React, { Suspense } from "react";
 import Navigation from "./Components/Navigation/Navigation";
 import { BrowserRouter, Routes } from "react-router-dom";
 import { Route } from "react-router";
-// import Home from "./Components/Home/Home";
-// import Footer from "./Components/Footer/Footer";
-// import Contact from "./Components/Contact/Contact";
-// import AboutMore from "./Components/About/AboutMore/AboutMore";
-// import AllProjects from "./Components/Projects/AllProjects/AllProjects";
-// import Blogs from "./Components/Blogs/Blogs";
 // import HashLoader from "react-spinners/HashLoader";
 import { useEffect, useState } from "react";
 import "aos/dist/aos.css";
@@ -18,7 +12,6 @@ import Review from "./Components/Review/Review";
 import secretFunction from "./secret";
 import Loading from "./Components/Loading/Loading";
 import Test from "./Components/Test/Test";
-
 const Home = React.lazy(() => import("./Components/Home/Home"));
 const Footer = React.lazy(() => import("./Components/Footer/Footer"));
 const Contact = React.lazy(() => import("./Components/Contact/Contact"));
@@ -38,16 +31,20 @@ function App() {
       setLoading(false);
     }, 3000);
   }, []);
-  // secretFunction();
+  secretFunction();
   return (
     <div className="App">
-      <Suspense fallback={<div style={{ height: "100vh" }} className="bg-dark w-full"></div>}>
+      <Suspense
+        fallback={
+          <div style={{ height: "100vh" }} className="bg-dark w-full"></div>
+        }
+      >
         {loading ? (
           <Loading loading={loading}></Loading>
         ) : (
           <BrowserRouter>
             <Navigation></Navigation>
-            <ScrollToTop width="20" height="20" smooth color="gray" />
+            <ScrollToTop width="20" height="20" smooth color="white" />
             <Routes>
               <Route path="/" element={<Home></Home>}></Route>
               <Route path="/home" element={<Home></Home>}></Route>

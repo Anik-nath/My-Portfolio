@@ -24,7 +24,7 @@ const Projects = () => {
         </div>
         <div className="row">
           <div id="travel" className="col-lg-4 col-md-4 col-12">
-            <Card className="cardbgColor text-center">
+            <Card data-aos="zoom-in" className="cardbgColor text-center">
             <div className="window">
                 <img loading="lazy" src="https://i.ibb.co/9Nw0B6c/screencapture-travel-site-4b05c-web-app-2022-01-19-21-59-43.png" alt="" />
              </div>
@@ -76,7 +76,7 @@ const Projects = () => {
             </Card>
           </div>
           <div id="foodmart" className="col-lg-4 col-md-4 col-12 my-5 my-lg-0 my-md-0">
-            <Card className="cardbgColor text-center">
+            <Card data-aos="zoom-in" className="cardbgColor text-center">
              <div className="window">
                 <img loading="lazy" src="https://i.ibb.co/hgrjDzw/foodMart.png" alt="" />
              </div>
@@ -131,7 +131,7 @@ const Projects = () => {
             </Card>
           </div>
           <div id="cycleshop" className="col-lg-4 col-md-4 col-12 ">
-            <Card className="cardbgColor text-center">
+            <Card data-aos="zoom-in" className="cardbgColor text-center">
             <div className="window">
                 <img loading="lazy" src="https://i.ibb.co/sH2sK7k/screencapture-cycle-shop-62d0c-web-app-home-2021-11-14-01-46-59.png" alt="" />
              </div>

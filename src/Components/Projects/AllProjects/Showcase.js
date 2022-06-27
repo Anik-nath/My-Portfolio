@@ -32,9 +32,9 @@ const Showcase = (props) => {
       <div data-aos="zoom-in" className="cardbgColor">
         <Card.Img variant="top" src={img1} />
         <Card.Body>
-          <Card.Title className="text-white-50">{name}</Card.Title>
+          <Card.Title className="my-secondary-text">{name}</Card.Title>
           <Card.Text className="d-flex flex-wrap gap-2 py-2">
-            <div className="d-flex flex-column text-white-50">
+            <div className="d-flex flex-column my-secondary-text">
               <li>{point1}</li>
               <li>{point2}</li>
               <li>{point3}</li>
