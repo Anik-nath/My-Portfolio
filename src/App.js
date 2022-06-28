@@ -12,6 +12,7 @@ import Review from "./Components/Review/Review";
 import secretFunction from "./secret";
 import Loading from "./Components/Loading/Loading";
 import Test from "./Components/Test/Test";
+import PageNotFound from "./Components/PageNotFound";
 const Home = React.lazy(() => import("./Components/Home/Home"));
 const Footer = React.lazy(() => import("./Components/Footer/Footer"));
 const Contact = React.lazy(() => import("./Components/Contact/Contact"));
@@ -47,6 +48,7 @@ function App() {
             <ScrollToTop width="20" height="20" smooth color="white" />
             <Routes>
               <Route path="/" element={<Home></Home>}></Route>
+              <Route path="*" element={<PageNotFound></PageNotFound>}></Route>
               <Route path="/home" element={<Home></Home>}></Route>
               <Route path="/about" element={<AboutMore></AboutMore>}></Route>
               <Route path="/contact" element={<Contact></Contact>}></Route>
